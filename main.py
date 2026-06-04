@@ -1,17 +1,16 @@
-# main.py
-# Arquivo principal — apenas roda o sistema
+# principal arquivo — apenas roda o código monstrando a introdução, menu etc.
 
-from auxiliares import cabecalho, limpar_tela, pausar, linha
+from auxiliares import cabecalho, limpar_tela, pausar, linha 
 from livros import cadastrar_livro, listar_livros, pesquisar_livro
 from usuarios import cadastrar_usuario, listar_usuarios, pagar_multa
 from emprestimos import realizar_emprestimo, devolver_livro, listar_emprestimos
 from relatorios import mostrar_relatorio, salvar_relatorio
 
 
-# ── Introdução ───────────────────────────────────────────────────────────────
+# Introdução!
 
 def introducao():
-    """Mensagem de boas-vindas ao sistema."""
+    #mensagem de boas vinda // introducao
     limpar_tela()
     linha("═")
     print("  BEM-VINDO AO SISTEMA DE BIBLIOTECA - PUCPR")
@@ -20,24 +19,24 @@ def introducao():
   Você é o bibliotecário responsável por manter tudo
   em ordem. Com este sistema você pode:
 
-    📚 Cadastrar e consultar livros do acervo
-    👤 Gerenciar usuários e suas multas
-    🔄 Controlar empréstimos e devoluções
-    📄 Gerar relatórios da biblioteca
+    1. Cadastrar e consultar livros do acervo
+    2. Gerenciar usuários e suas multas
+    3. Controlar empréstimos e devoluções
+    4. Gerar relatórios da biblioteca
 
   Regras:
-    • Limite de 3 livros por usuário
-    • Prazo de devolução: 14 dias
-    • Multa por atraso: R$ 2,50 por dia
-    • Teto de multa: R$ 50,00
+    - Limite de 3 livros por usuário
+    - Prazo de devolução: 14 dias
+    - Multa por atraso: R$ 2,50 por dia
+    - Teto de multa: R$ 50,00
   """)
     input("  Pressione Enter para começar...")
 
 
-# ── Encerramento ─────────────────────────────────────────────────────────────
+#Encerramento
 
 def encerrar():
-    """Salva o relatório e exibe mensagem de encerramento."""
+    #salva o relatório e printa a mensagem final
     cabecalho("ENCERRANDO O SISTEMA")
     print("  Salvando relatório final...")
     arquivo = salvar_relatorio()
@@ -46,10 +45,10 @@ def encerrar():
     linha("═")
 
 
-# ── Submenus ─────────────────────────────────────────────────────────────────
+# Submenus
 
 def menu_livros():
-    while True:                        # repetição 2
+    while True:                     
         limpar_tela()
         cabecalho("MENU - LIVROS")
         print("  (1) Cadastrar livro")
@@ -72,7 +71,7 @@ def menu_livros():
 
 
 def menu_usuarios():
-    while True:                        # repetição 3
+    while True:                      
         limpar_tela()
         cabecalho("MENU - USUÁRIOS")
         print("  (1) Cadastrar usuário")
@@ -95,7 +94,7 @@ def menu_usuarios():
 
 
 def menu_emprestimos():
-    while True:                        # repetição 4
+    while True:                       
         limpar_tela()
         cabecalho("MENU - EMPRÉSTIMOS")
         print("  (1) Realizar empréstimo")
@@ -117,12 +116,12 @@ def menu_emprestimos():
         pausar()
 
 
-# ── Loop principal ────────────────────────────────────────────────────────────
+# loop principal 
 
 def main():
-    introducao()                       # INTRODUÇÃO
+    introducao()                      
 
-    while True:                        # repetição 1 — loop principal
+    while True:                        
         limpar_tela()
         cabecalho("MENU PRINCIPAL")
         print("  (1) Livros")
@@ -142,12 +141,12 @@ def main():
             mostrar_relatorio()
             pausar()
         elif opcao == "0":
-            encerrar()                 # FIM
+            encerrar()            
             break
         else:
             print("  Opção inválida. Tente novamente.")
             pausar()
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": #garante que esse arquivo é executado apenas quando roda ele diretamente, não quando é importado por outro arquivo.
     main()
