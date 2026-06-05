@@ -4,7 +4,7 @@ import datetime
 import math
 
 import dados 
-from constantes import LIMITE_EMPRESTIMO, PRAZO_DEVOLUCAO, MULTA_POR_DIA, MULTA_MAXIMA
+from constantes import LIMITE_EMPRESTIMOS, PRAZO_DEVOLUCAO, MULTA_POR_DIA, MULTA_MAXIMA
 from auxiliares import cabecalho, linha
 
 # *** Funções de empréstimos e multa ***
