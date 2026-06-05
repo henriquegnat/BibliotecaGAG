@@ -56,7 +56,7 @@ def realizar_emprestimo():
         print("Livro não encontrado.")
         return
     
-    if livro ["quantidade_disponível"] <= 0:
+    if livro ["quantidade_disponivel"] <= 0:
         print(f"O Livro '{livro['titulo']}' não está disponível para empréstimo no momento.")
         return
     

@@ -4,7 +4,7 @@ import math
 import dados
 from livros import buscar_livro_por_id
 from usuarios import buscar_usuario_por_id
-from relatorios import cabecalho, linha
+from auxiliares import cabecalho, linha
 
 
 def mostrar_relatorio():  # AQUI ELE EXIBE O RELATÓRIO RESUMIDO
