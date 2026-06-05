@@ -10,7 +10,7 @@ from auxiliares import cabecalho, linha
 # *** Funções de empréstimos e multa ***
 
 def contar_emprestimos_usuario(usuario_id): # Essa função consegue contar quantos empréstimos um usuário tem atualmente.
-    return sum(1 for emprestimo in dados.emprestimos if emprestimo[usuario_id] == usuario_id)
+    return sum(1 for emprestimo in dados.emprestimos if emprestimo["usuario_id"] == usuario_id)
 
 def emprestimo_ativo(livro_id): # Essa função verifica se um livro específico já está emprestado
     for emp in dados.emprestimos:
