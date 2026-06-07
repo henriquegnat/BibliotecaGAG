@@ -1,4 +1,4 @@
-# funcoes relacionadas ao cadastro e gerenciamentos dos usuários
+# funcoes relacionadas ao cadastro e gerenciamentos dos usuários!
 
 import dados
 from constantes import ID_INICIAL_USUARIO

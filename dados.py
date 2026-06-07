@@ -1,5 +1,4 @@
-# dados.py
-# Listas que guardam o estado do sistema enquanto ele está rodando
+# listas que guardam o estado do sistema enquanto ele está rodando
 
 livros      = []   # lista de dicionários de livros
 usuarios    = []   # lista de dicionários de usuários

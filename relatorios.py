@@ -7,7 +7,7 @@ from usuarios import buscar_usuario_por_id
 from auxiliares import cabecalho, linha
 
 
-def mostrar_relatorio():  # AQUI ELE EXIBE O RELATÓRIO RESUMIDO
+def mostrar_relatorio():  # AQUI ELE EXIBE O RELATÓRIO RESUMIDO!
     cabecalho("RELATORIO DA BIBLIOTECA")
     print(" (1) Resumo Geral (2) Detalhar empréstimos ativos")
     tipo = input(" Tipo de relatório: ").strip()

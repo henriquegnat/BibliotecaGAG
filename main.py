@@ -1,4 +1,4 @@
-#arquivo principal - roda os menus e junta todos os módulos
+#arquivo principal - roda os menus e junta todos os módulos!
 
 from auxiliares import cabecalho, limpar_tela, pausar, linha
 from livros import cadastrar_livro, listar_livros, pesquisar_livro
@@ -7,7 +7,7 @@ from emprestimos import realizar_emprestimo, devolver_livro, listar_emprestimos
 from relatorios import mostrar_relatorio, salvar_relatorio
 
 
-# introducao do codigo
+# introducao do jogo
 
 def introducao():
     #mostrar introdução
@@ -33,7 +33,7 @@ def introducao():
     input("  Pressione Enter para começar...")
 
 
-# encerramento do codigo
+# encerramento do jogo
 
 def encerrar():
     #salva o relatorio e exibe mensagem final

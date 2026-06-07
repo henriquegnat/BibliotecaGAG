@@ -7,7 +7,7 @@ import dados
 from constantes import LIMITE_EMPRESTIMOS, PRAZO_DEVOLUCAO, MULTA_POR_DIA, MULTA_MAXIMA
 from auxiliares import cabecalho, linha
 
-# *** Funções de empréstimos e multa ***
+#Funções de empréstimos e multa
 
 def contar_emprestimos_usuario(usuario_id): # Essa função consegue contar quantos empréstimos um usuário tem atualmente.
     return sum(1 for emprestimo in dados.emprestimos if emprestimo["usuario_id"] == usuario_id)
@@ -29,7 +29,7 @@ def calcular_multa(data_prevista_str): # Essa função calcula a multa com base 
     multa = min(multa, MULTA_MAXIMA)
     return round(multa, 2)
 
-# *** Funções principais ***
+#Funções principais
 
 def realizar_emprestimo():
     from livros import buscar_livro_por_id
@@ -124,7 +124,7 @@ def devolver_livro(): # Essa função é responsável por processar a devoluçã
 
 
 def listar_emprestimos():
-    """Lista todos os empréstimos ativos com status de prazo."""
+    #Lista todos os empréstimos ativos com status de prazo.
     from livros import buscar_livro_por_id
     from usuarios import buscar_usuario_por_id
 

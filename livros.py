@@ -1,4 +1,3 @@
-# livros.py
 # Funções relacionadas ao cadastro e consulta de livros
 
 import dados
